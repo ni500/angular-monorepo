@@ -11,10 +11,13 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "talks": ["dist/talks/talks", "dist/talks"],
+      "@monorepo/talks": ["projects/talks/src/public-api.ts"],
+      "ui": ["dist/ui/ui", "dist/ui"],
+      "@monorepo/ui": ["projects/ui/src/public-api.ts"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

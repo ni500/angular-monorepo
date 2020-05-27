@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-import { Talk } from '../models/talk.model';
+import { Talk } from '@monorepo/talks';
 
 @Component({
   selector: 'app-view-talks',
