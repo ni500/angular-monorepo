@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "angular-monorepo"
+  },
+  "targets": {
+    "angular-monorepo": {
+      "hosting": {
+        "angular-monorepo": [
+          "angular-monorepo"
+        ]
+      }
+    }
+  }
+}

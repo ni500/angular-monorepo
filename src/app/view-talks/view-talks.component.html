@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Charlas recomendadas por la comunidad</h2>
+  <div class="cards-grid">
+    <div *ngFor="let talk of talks$ | async" class="talk-card">
+      <mat-card>
+        <mat-card-title>{{ talk.title }}</mat-card-title>
+        <mat-card-subtitle>{{ talk.speaker }}</mat-card-subtitle>
+
+        <mat-card-content class="card-content">
+          <span ngClass="mat-body">{{ talk.description }}</span>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <a [href]="talk.url" target="_blank">VER CHARLA</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
