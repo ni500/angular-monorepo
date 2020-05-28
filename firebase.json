@@ -5,16 +5,23 @@
   },
   "hosting": [
     {
+      "target": "angular-monorepo",
       "public": "dist/angular-monorepo",
       "ignore": [
         "firebase.json",
         "**/.*",
         "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
       ]
     },
     {
-      "target": "angular-monorepo",
-      "public": "dist/angular-monorepo",
+      "target": "app1",
+      "public": "dist/app1",
       "ignore": [
         "firebase.json",
         "**/.*",
