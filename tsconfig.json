@@ -14,7 +14,17 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ui": [
+        "dist/ui/ui",
+        "dist/ui"
+      ],
+      "talks": [
+        "dist/talks/talks",
+        "dist/talks"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

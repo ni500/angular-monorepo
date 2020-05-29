@@ -1,3 +1,4 @@
+import { TalksModule } from './../../projects/talks/src/lib/talks.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -21,6 +22,8 @@ import { CreateTalkComponent } from './create-talk/create-talk.component';
 import { HomeComponent } from './home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { UiModule } from 'projects/ui/src/public-api';
+import { NgMaterialModule } from 'projects/ui/src/lib/ng-material.module';
 
 @NgModule({
   declarations: [
@@ -35,18 +38,11 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatToolbarModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatSnackBarModule,
-    MatCardModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    MatListModule,
-    MatIconModule,
-    MatButtonModule
+    UiModule,
+    TalksModule,
+    NgMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent],
